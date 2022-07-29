@@ -3,7 +3,7 @@
 ## Inputs are the filepath where the data is stored, the pollutant (either sulfate or nitrate), and an integer vector of monitors
 ## Return the value of all non-NA values
 
-pollutantmean <- function(Directory, pollutant, id) {
+pollutantmean <- function(Directory, pollutant, id = 1:332) {
   collected_csv <- NULL
   for(i in id){
     
