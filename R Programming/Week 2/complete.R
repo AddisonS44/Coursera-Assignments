@@ -20,5 +20,6 @@ complete <- function(Directory, id = 1:332) {
     
     collected_csv <- rbind(collected_csv, c(current_csv[1,"ID"], rowcount))
   }
+  colnames(collected_csv)<-c("id", "nobs")
   collected_csv
 }
